@@ -1,0 +1,8 @@
+def p1_play(nround, matrix, if_D, if_C): 
+    if nround == 0:
+        return (True)
+    if nround != 0:
+        if matrix[1,nround-1] == True:
+            return(random.randrange(100) < int(if_C)) #your strategy on reciprocating
+        if matrix[1,nround-1] == False:
+            return(random.randrange(100) < int(if_D)) #your strategy if they defect
